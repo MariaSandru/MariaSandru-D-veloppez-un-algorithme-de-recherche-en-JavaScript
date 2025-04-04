@@ -44,3 +44,20 @@ export function getUstensils() {
 
     return Array.from(ustensilsSet)  // Convertit l'ensemble en tableau
 }
+
+/**
+ * récupérer la liste selon le type
+ * @param type
+ * @returns {*[]}
+ */
+export function getItemsList(type) {
+    let itemsList = []
+    if (type === "Ingredients") {
+        itemsList = getIngredients()
+    } else if (type === "Appareil") {
+        itemsList = getAppareil()
+    } else if (type === "Ustensils") {
+        itemsList = getUstensils()
+    }
+    return itemsList
+}

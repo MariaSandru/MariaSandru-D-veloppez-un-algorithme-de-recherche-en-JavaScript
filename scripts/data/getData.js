@@ -29,3 +29,18 @@ export function getAppareil() {
 
     return Array.from(appareilSet)
 }
+/**
+ * récupérer les ustensiles
+ * @returns {any[]}
+ */
+export function getUstensils() {
+    const ustensilsSet = new Set()
+
+    recipes.forEach(recipe => {
+        recipe.ustensils.forEach(ustensil => {
+            ustensilsSet.add(ustensil)
+        })
+    })
+
+    return Array.from(ustensilsSet)  // Convertit l'ensemble en tableau
+}

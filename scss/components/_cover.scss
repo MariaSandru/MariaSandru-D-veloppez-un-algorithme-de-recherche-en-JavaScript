@@ -1,0 +1,35 @@
+/** Hero **/
+.hero {
+  display: flex;
+  height: 72vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../assets/img/webp/Recette05.webp");
+  background-size: cover;
+  background-position: center;
+  margin-top: -87px;
+}
+
+.contentHero {
+  //width: 50%;
+  z-index: 5;
+  padding-top: 87px;
+}
+
+.hero:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+h1 {
+  color: #FFD15B;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 400;
+  text-align: center;
+}

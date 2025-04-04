@@ -1,0 +1,47 @@
+.searchBar {
+  display: flex;
+  position: relative;
+  align-items: center;
+
+  &__input {
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21.86px;
+    text-align: left;
+    padding: 18px 24px;
+    border-radius: 10px;
+  }
+
+  &__button {
+    position: absolute;
+    padding: 12px 15px 12px 17px;
+    background-color: #000;
+    border: none;
+    border-radius: 10px;
+    right: 7px;
+    transition: .25s all ease-in-out;
+
+    &:hover {
+      background-color: #FFD15B;
+      & i {
+        color: #1B1B1B;
+      }
+    }
+
+    & i {
+      color: white;
+    }
+  }
+
+  & .clear-button {
+    cursor: pointer;
+    padding: 0 8px;
+    font-size: 16px;
+    color: #333;
+    position: absolute;
+    right: 62px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

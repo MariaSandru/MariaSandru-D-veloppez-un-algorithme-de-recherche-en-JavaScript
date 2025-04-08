@@ -42,7 +42,7 @@ export class View {
         })
         this.dropdownIngredient.createDropDown(this)
 
-        this.dropdownAppliance = new Dropdown("Appliances", (type, selectedText, isRemoving) => {
+        this.dropdownAppliance = new Dropdown("Appareil", (type, selectedText, isRemoving) => {
             this.updateSelectedItems(type, selectedText, isRemoving)
         })
         this.dropdownAppliance.createDropDown(this)
@@ -226,11 +226,10 @@ export class View {
         if (searchQuery.length >= 3) {
             filteredRecipes = filteredRecipes.filter(recipe =>
                 recipe.name.toLowerCase().includes(searchQuery) ||
-                recipe.description.toLowerCase().includes(searchQuery) ||
-                recipe.ingredients.some(ingredient => ingredient.ingredient.toLowerCase().includes(searchQuery)) ||
-                recipe.appliance.toLowerCase().includes(searchQuery) ||
-                recipe.ustensils.some(ustensil => ustensil.toLowerCase().includes(searchQuery))
-            )
+              
+                recipe.ingredients.some(ingredient => ingredient.ingredient.toLowerCase().includes(searchQuery)) 
+               
+            );
         }
 
         return filteredRecipes
@@ -267,7 +266,7 @@ export class View {
 
             // afficher ou cacher le bouton apres 3 caractères
             if (inputValue.length >= 3) {
-                this.searchQuery = inputValue
+                this.searchQuery = inputValue.replace(/\s/g, ""); // Supprime tous les espaces
                 clearButton.style.display = 'inline'
             } else {
                 this.searchQuery = ""

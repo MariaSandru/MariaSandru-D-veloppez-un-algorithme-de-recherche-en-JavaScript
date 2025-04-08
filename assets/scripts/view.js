@@ -79,7 +79,7 @@ export class View {
         }
 
         console.log('Ingredients List:', this.selectedIngredientsList)
-        console.log('Appliances List:', this.selectedApplianceList)
+        console.log('Appareil List:', this.selectedApplianceList)
         console.log('Ustensils List:', this.selectedUstensilsList)
 
         // lancer vers la fonction qui s'occupe des filtres
@@ -209,7 +209,7 @@ export class View {
             const inputValue = event.target.value
 
             if (inputValue.length >= 3) {
-                this.searchQuery = inputValue
+                this.searchQuery = inputValue.replace(/\s/g, ""); // Supprime tous les espaces
             } else {
                 this.searchQuery = ""
             }

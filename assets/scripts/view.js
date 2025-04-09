@@ -42,7 +42,7 @@ export class View {
         })
         this.dropdownIngredient.createDropDown(this)
 
-        this.dropdownAppliance = new Dropdown("Appliances", (type, selectedText, isRemoving) => {
+        this.dropdownAppliance = new Dropdown("Appareil", (type, selectedText, isRemoving) => {
             this.updateSelectedItems(type, selectedText, isRemoving)
         })
         this.dropdownAppliance.createDropDown(this)
@@ -87,7 +87,7 @@ export class View {
         }
 
         console.log('Ingredients List:', this.selectedIngredientsList)
-        console.log('Appliances List:', this.selectedApplianceList)
+        console.log('Appareil List:', this.selectedApplianceList)
         console.log('Ustensils List:', this.selectedUstensilsList)
 
         // lancer vers la fonction qui s'occupe des filtres

@@ -1,0 +1,114 @@
+/** Cards **/
+.grid {
+  padding: 25px 0;
+}
+
+#recipe-container {
+  --bs-gutter-x: 2rem;
+  --bs-gutter-y: 2rem;
+}
+
+.recipe-card {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 4px 34px 30px #0000000A;
+
+
+  & .infos {
+    padding: 26px;
+
+    & .read-more-btn {
+      padding-left: 4px;
+      cursor: pointer;
+      color: #3367D1;
+
+      &:hover {
+        color: #3367D1;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  & .divImg {
+    position: relative;
+  }
+
+  & .timer {
+    position: absolute;
+    background: #FFD15B;
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16.39px;
+    text-align: center;
+    right: 12px;
+    top: 12px;
+    padding: 5px 15px;
+    border-radius: 14px;
+  }
+
+  & img {
+    width: 100%;
+    height: 200px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+
+  & h2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27.1px;
+    text-align: left;
+    margin-bottom: 24px;
+    margin-top: 6px;
+  }
+
+  & h3 {
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19.12px;
+    text-align: left;
+    color: #1B1B1B;
+    margin: 0;
+  }
+
+  & .description {
+    color: #1B1B1B;
+    margin-bottom: 20px;
+  }
+
+  & p {
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.12px;
+    text-align: left;
+    color: #7A7A7A;
+    margin: 0;
+  }
+
+  & .ingredientsCol {
+    padding-bottom: 12px;
+  }
+
+  & ul {
+    font-size: 16px;
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  & .titreContenu {
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16.39px;
+    letter-spacing: 0.09em;
+    text-align: left;
+    color: #7A7A7A;
+    text-transform: uppercase;
+  }
+}

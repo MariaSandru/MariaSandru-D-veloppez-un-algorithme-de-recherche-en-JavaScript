@@ -1,0 +1,35 @@
+/* Medium devices (tablets, less than 768px) */
+@media all and (min-width: 767px) and (max-width: 980px) {
+
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  .filters {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%!important;
+    align-items: center;
+  }
+
+  .dropdown {
+    width: 84%!important;
+  }
+
+  .type {
+    width: 100%!important;
+  }
+
+  .filterResult {
+    display: flex!important;
+    flex-direction: column!important;
+  }
+
+  .numberFound {
+    padding-top: 20px;
+  }
+
+  #recipe-container {
+    padding: 0 10px;
+  }
+}

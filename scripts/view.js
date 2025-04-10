@@ -176,7 +176,7 @@ export class View {
                  
                     recipe.ingredients.some(ingredient => ingredient.ingredient.toLowerCase().includes(searchQuery)) 
                     
-                );
+                )
                  {
                     result.push(recipe)
                 }

@@ -227,7 +227,7 @@ export class View {
             filteredRecipes = filteredRecipes.filter(recipe =>
                 recipe.name.toLowerCase().includes(searchQuery) ||
                 
-                recipe.ingredients.some(ingredient => ingredient.ingredient.toLowerCase().includes(searchQuery)) );
+                recipe.ingredients.some(ingredient => ingredient.ingredient.toLowerCase().includes(searchQuery)) )
         }
 
         return filteredRecipes

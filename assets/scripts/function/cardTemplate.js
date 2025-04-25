@@ -24,10 +24,10 @@ export function cardTemplate(recipe) {
     timer.textContent = recipe.time + "min"
 
     // change image extension to .
-    const imagePath = recipe.image.replace(/\.[^/.]+$/,".jpg",'')
+    const imagePath = recipe.image.replace(/\.[^/.]+$/,".jpg",'');
     img.src = `./assets/img/jpg/${imagePath}`
-    img.alt = " "
-    img.loading = "lazy"
+    img.alt = `Image de ${recipe.name}`;
+    img.loading = "lazy";
 
     // title
     const title = document.createElement("h2")

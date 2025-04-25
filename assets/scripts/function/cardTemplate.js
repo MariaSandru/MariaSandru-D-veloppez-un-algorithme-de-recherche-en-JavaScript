@@ -25,9 +25,9 @@ export function cardTemplate(recipe) {
 
     // change image extension to .
     const imagePath = recipe.image.replace(/\.[^/.]+$/,".jpg", '')
-  
-    img.src = `./assets/img/jpg/ ${imagePath}`
-    img.alt = ""
+    img.src = `/assets/img/jpg/${imagePath}`
+    img.alt = recipe.name
+
     img.loading = "lazy"
 
     // title

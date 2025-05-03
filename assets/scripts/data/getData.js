@@ -7,14 +7,14 @@ import { recipes } from "./recipes.js"
 export function getIngredients() {
     const ingredientsSet = new Set()
 
-    recipes.forEach(recipe => {
-        recipe.ingredients.forEach(ingredient => {
-            ingredientsSet.add(ingredient.ingredient)
+    recipes.forEach(recipe => {                            /*  Boucle sur chaque recette, parcourt chaque recette du tableau recipes.*/
+        recipe.ingredients.forEach(ingredient => {       /* Chaque recette contient un tableau "ingredients", donc la fonction parcourt ce tableau aussi.   */
+            ingredientsSet.add(ingredient.ingredient)      /* Ajout des ingrédients uniques ,ajoute uniquement le nom de l'ingrédient (sans doublon)  */
         })
     })
 
-    return Array.from(ingredientsSet)
-}
+    return Array.from(ingredientsSet)              /*      Conversion en tableau , transforme l'ensemble en tableau avant de le retourner      */   
+} 
 
 /**
  * Récupérer la liste unique des appareils

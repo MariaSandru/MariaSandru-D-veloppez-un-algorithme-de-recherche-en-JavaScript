@@ -163,7 +163,12 @@ export class View {
 
         return filteredRecipes
     }
-
+     /**
+    * Function qui filtre les recettes depuis la barre de recherche
+    * @param filteredRecipes
+    * @returns {*}
+    */
+  
     filteredBySearchInput(filteredRecipes) {
         const searchQuery = this.searchQuery?.toLowerCase() || ""
         const result = []

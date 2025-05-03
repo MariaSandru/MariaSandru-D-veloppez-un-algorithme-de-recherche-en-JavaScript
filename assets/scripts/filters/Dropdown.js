@@ -2,10 +2,10 @@ import {getItemsList} from "../data/getData.js"
 
 export default class Dropdown {
     constructor(type, callback) {
-        this.callback = callback
-        this.selectedItem = []
-        this.type = type
-        this.handleOutsideClick = this.handleOutsideClick.bind(this)
+        this.callback = callback /*  Stocke la fonction callback dans une propriété de l'instance.   */ 
+        this.selectedItem = []   /* Initialise selectedItem comme un tableau vide.     */ 
+        this.type = type         /*Stocke le type du dropdown dans une propriété type.  */
+        this.handleOutsideClick = this.handleOutsideClick.bind(this) /* Lie la méthode handleOutsideClick à l'instance actuelle (this). */
     }
 
     /**

@@ -39,7 +39,12 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 0;
 }
-
+.hiddenList {
+  border: 2px solid #9b8383;
+  padding: 10px; /* Espacement intérieur */
+  border-radius: 10px; /* Bordure arrondie */
+  background-color: #f5eeee; /* Couleur de fond */
+}
 h1 {
   color:rgb(150, 100, 20);
   font-size: 40px;
@@ -167,6 +172,7 @@ h1 {
 
 .hidden {
   display: none;
+  
 }
 
 .show {
